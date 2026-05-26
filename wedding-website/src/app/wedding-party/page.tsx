@@ -2,6 +2,7 @@ import { Card } from "@/components/Card";
 import { Container } from "@/components/Container";
 import { SectionHeading } from "@/components/SectionHeading";
 import { siteConfig } from "@/content/siteConfig";
+import { assetPath } from "@/lib/paths";
 
 const getInitials = (name: string) =>
   name
@@ -29,7 +30,7 @@ export default function WeddingPartyPage() {
               <div className="flex items-center gap-4">
                 {member.photo ? (
                   <img
-                    src={member.photo}
+                    src={assetPath(member.photo)}
                     alt={member.name}
                     className="h-16 w-16 rounded-full object-cover"
                   />

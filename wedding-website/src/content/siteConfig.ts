@@ -1,6 +1,6 @@
 export const siteConfig = {
   meta: {
-    title: "Jared Hermon & Kyla Bonker",
+    title: "Kyla Bonker & Jared Hermon",
     description:
       "Join us in Kansas City for the wedding of Jared Hermon and Kyla Bonker.",
   },

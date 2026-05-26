@@ -1,4 +1,5 @@
 import type { CSSProperties } from "react";
+import { assetPath } from "@/lib/paths";
 
 type PolaroidPhoto = Readonly<{
   src: string;
@@ -76,7 +77,7 @@ export function PolaroidBackground({
           >
             <div className="polaroid-photo">
               <img
-                src={photo.src}
+                src={assetPath(photo.src)}
                 alt=""
                 loading="lazy"
                 decoding="async"

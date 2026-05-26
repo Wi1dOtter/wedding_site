@@ -4,7 +4,7 @@ type AccordionItem = {
 };
 
 type AccordionProps = {
-  items: AccordionItem[];
+  items: ReadonlyArray<AccordionItem>;
 };
 
 export function Accordion({ items }: AccordionProps) {

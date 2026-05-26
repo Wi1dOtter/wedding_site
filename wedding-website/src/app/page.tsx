@@ -4,6 +4,7 @@ import { Container } from "@/components/Container";
 import { PolaroidBackground } from "@/components/PolaroidBackground";
 import { SectionHeading } from "@/components/SectionHeading";
 import { siteConfig } from "@/content/siteConfig";
+import { assetPath } from "@/lib/paths";
 
 export default function Home() {
   const { hero, details, schedulePreview } = siteConfig.home;
@@ -13,7 +14,7 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div
           className="absolute inset-0 z-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${hero.backgroundImage})` }}
+          style={{ backgroundImage: `url(${assetPath(hero.backgroundImage)})` }}
           aria-hidden="true"
         />
         <PolaroidBackground
